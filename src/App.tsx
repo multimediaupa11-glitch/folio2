@@ -1,3 +1,4 @@
+import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import OurService from './components/OurService';
 import Testimonial from './components/Testimonial';
@@ -8,6 +9,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="min-h-screen bg-white">
+      <Navbar />
       <HeroSection />
       <OurService />
       <Testimonial />

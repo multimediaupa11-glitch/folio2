@@ -20,7 +20,7 @@ export default function Contact() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Contactez-<span className="text-[rgb(240,45,58)]">Moi</span>
+            Contactez-<span className="text-[rgb(240,45,58)]">Nous</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Un projet en tête ? Discutons-en ensemble
@@ -29,7 +29,7 @@ export default function Contact() {
 
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Envoyez-moi un message</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">Envoyez-nous un message</h3>
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -96,7 +96,7 @@ export default function Contact() {
               </div>
               <div>
                 <h4 className="font-bold text-gray-900 mb-1">Email</h4>
-                <p className="text-gray-600">contact@monportfolio.fr</p>
+                <p className="text-gray-600">contact@swdev.mg</p>
               </div>
             </div>
 
@@ -106,7 +106,7 @@ export default function Contact() {
               </div>
               <div>
                 <h4 className="font-bold text-gray-900 mb-1">Téléphone</h4>
-                <p className="text-gray-600">+33 6 12 34 56 78</p>
+                <p className="text-gray-600">+261 34 XX XXX XX</p>
               </div>
             </div>
 
@@ -116,14 +116,14 @@ export default function Contact() {
               </div>
               <div>
                 <h4 className="font-bold text-gray-900 mb-1">Localisation</h4>
-                <p className="text-gray-600">Paris, France</p>
+                <p className="text-gray-600">Madagascar</p>
               </div>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-xl mt-8">
               <h4 className="font-bold text-gray-900 mb-3">Disponibilité</h4>
               <p className="text-gray-600 leading-relaxed">
-                Je suis actuellement disponible pour de nouveaux projets. N'hésitez pas à me contacter pour discuter de vos besoins.
+                Nous sommes actuellement disponibles pour de nouveaux projets. N'hésitez pas à nous contacter pour discuter de vos besoins.
               </p>
             </div>
           </div>

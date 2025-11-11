@@ -3,23 +3,23 @@ import { Code, Smartphone, Palette, Rocket } from 'lucide-react';
 const services = [
   {
     icon: Code,
-    title: 'Développement Web',
-    description: 'Création de sites web modernes et performants avec les dernières technologies.',
+    title: 'Création de Sites Internet',
+    description: 'Développement de sites web sur mesure, modernes et performants adaptés à vos besoins.',
+  },
+  {
+    icon: Rocket,
+    title: 'Refonte de Sites Web',
+    description: 'Modernisation et amélioration de votre site existant pour une meilleure performance.',
   },
   {
     icon: Smartphone,
-    title: 'Applications Mobiles',
-    description: 'Développement d\'applications mobiles natives et cross-platform.',
+    title: 'Sites Vitrine',
+    description: 'Création de sites vitrine élégants pour présenter votre entreprise et vos services.',
   },
   {
     icon: Palette,
     title: 'Design UI/UX',
-    description: 'Conception d\'interfaces utilisateur intuitives et esthétiques.',
-  },
-  {
-    icon: Rocket,
-    title: 'Optimisation',
-    description: 'Amélioration des performances et du référencement de vos projets.',
+    description: 'Conception d\'interfaces utilisateur intuitives et esthétiques pour une expérience optimale.',
   },
 ];
 
@@ -29,10 +29,10 @@ export default function OurService() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Mes <span className="text-[rgb(240,45,58)]">Services</span>
+            Nos <span className="text-[rgb(240,45,58)]">Services</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Des solutions complètes pour donner vie à vos projets digitaux
+            Des solutions informatiques complètes pour votre entreprise à Madagascar
           </p>
         </div>
 

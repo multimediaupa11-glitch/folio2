@@ -9,10 +9,10 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <h3 className="text-2xl font-bold mb-4">
-              <span className="text-[rgb(240,45,58)]">Mon</span>Portfolio
+              <span className="text-[rgb(240,45,58)]">SW</span> DEV
             </h3>
             <p className="text-gray-400 leading-relaxed">
-              Développeur web passionné, créant des expériences numériques modernes et performantes.
+              Société de services informatiques à Madagascar, créant des solutions web modernes et performantes.
             </p>
           </div>
 
@@ -70,7 +70,7 @@ export default function Footer() {
                 <Twitter className="w-5 h-5" />
               </a>
               <a
-                href="mailto:contact@example.com"
+                href="mailto:contact@swdev.mg"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-[rgb(240,45,58)] transition-colors duration-300"
               >
                 <Mail className="w-5 h-5" />
@@ -81,7 +81,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 pt-8 text-center">
           <p className="text-gray-400 flex items-center justify-center gap-2">
-            © {currentYear} Portfolio. Fait avec <Heart className="w-4 h-4 text-[rgb(240,45,58)]" /> par un développeur passionné
+            © {currentYear} SW DEV. Fait avec <Heart className="w-4 h-4 text-[rgb(240,45,58)]" /> par HERINIAINA Willy Jacquino
           </p>
         </div>
       </div>
