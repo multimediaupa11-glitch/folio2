@@ -1,7 +1,10 @@
 import { Calendar, User, ArrowRight } from 'lucide-react';
+import { useState } from 'react';
+import BlogArticle from './BlogArticle';
 
 const articles = [
   {
+    id: 'tendances-web-design',
     title: 'Les Tendances du Web Design en 2025',
     excerpt: 'Découvrez les dernières tendances qui transforment le monde du web design et comment les intégrer dans vos projets pour rester à la pointe de l\'innovation.',
     date: '15 Janvier 2025',
@@ -10,6 +13,7 @@ const articles = [
     category: 'Design',
   },
   {
+    id: 'optimiser-performances',
     title: 'Comment Optimiser les Performances de Votre Site Web',
     excerpt: 'Apprenez les meilleures pratiques pour améliorer la vitesse de chargement et les performances globales de votre site web pour une meilleure expérience utilisateur.',
     date: '10 Janvier 2025',
@@ -18,6 +22,7 @@ const articles = [
     category: 'Développement',
   },
   {
+    id: 'mobile-first',
     title: 'L\'Importance du Mobile First dans le Développement Web',
     excerpt: 'Pourquoi adopter une approche mobile first est essentiel pour réussir dans le paysage numérique actuel et comment l\'implémenter efficacement.',
     date: '5 Janvier 2025',
@@ -28,6 +33,12 @@ const articles = [
 ];
 
 export default function Blog() {
+  const [selectedArticleId, setSelectedArticleId] = useState<string | null>(null);
+
+  if (selectedArticleId) {
+    return <BlogArticle articleId={selectedArticleId} />;
+  }
+
   return (
     <section id="blog" className="py-20 bg-white">
       <div className="container mx-auto px-6">
@@ -41,9 +52,9 @@ export default function Blog() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {articles.map((article, index) => (
+          {articles.map((article) => (
             <article
-              key={index}
+              key={article.id}
               className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group border border-gray-100"
             >
               <div className="relative overflow-hidden h-48">
@@ -79,7 +90,10 @@ export default function Blog() {
                   {article.excerpt}
                 </p>
 
-                <button className="flex items-center gap-2 text-[rgb(240,45,58)] hover:text-[rgb(220,35,48)] font-semibold transition-colors duration-300 group">
+                <button
+                  onClick={() => setSelectedArticleId(article.id)}
+                  className="flex items-center gap-2 text-[rgb(240,45,58)] hover:text-[rgb(220,35,48)] font-semibold transition-colors duration-300 group"
+                >
                   <span>Lire la suite</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
                 </button>
